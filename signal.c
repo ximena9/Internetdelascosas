@@ -8,9 +8,11 @@ void hola(int signalNum){
 
 int main(){
     signal(12, hola);
+    signal(2, hola);
     while(1){
         printf("trabajando\n");
         sleep(1);
     }
+    printf("Aqui nunca llega");
     return 0;
 }
